@@ -14,8 +14,14 @@ const toggleLocales = () => {
       {{ t("header.title") }}
     </router-link>
 
-    <div class="flex items-end space-x-5">
+    <div class="flex items-center space-x-5">
+      <carbon-search />
+
+      <PostButton />
+
       <Avatar :title="t('header.avatar')" />
+
+      <carbon-notification />
 
       <a :title="t('header.toggle_langs')" @click="toggleLocales">
         <carbon-language />

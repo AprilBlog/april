@@ -1,6 +1,8 @@
+back: Back
 header:
   about: About
   avatar: Avatar
+  post: Post
   title: april
   toggle_langs: Change languages
 not-found: Not found

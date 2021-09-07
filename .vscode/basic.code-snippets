@@ -1,0 +1,15 @@
+{
+	"Basic starter": {
+	 	"prefix": "base",
+	 	"body": [
+      "<script setup lang=\"ts\">",
+      "const { t } = useI18n()",
+      "</script>",
+      "",
+      "<template>",
+      "</template>"
+      
+	 	],
+	 	"description": "Use basic starter with <script setup lang=\"ts\" and i18n.>"
+	 }
+}
