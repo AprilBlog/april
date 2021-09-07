@@ -1,5 +1,6 @@
 header:
   about: About
+  avatar: Avatar
   title: april
   toggle_langs: Change languages
 not-found: Not found

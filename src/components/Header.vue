@@ -9,17 +9,19 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <header class="flex justify-between py-5 px-10">
+  <header class="flex justify-between py-6 px-10">
     <router-link class="text-4xl" to="/" :title="t('header.title')">
       {{ t("header.title") }}
     </router-link>
 
-    <div class="flex items-end">
-      <a class="icon-btn mx-2" :title="t('header.toggle_langs')" @click="toggleLocales">
+    <div class="flex items-end space-x-5">
+      <Avatar :title="t('header.avatar')" />
+
+      <a :title="t('header.toggle_langs')" @click="toggleLocales">
         <carbon-language />
       </a>
 
-      <router-link class="icon-btn mx-2" to="/about" :title="t('header.about')">
+      <router-link to="/about" :title="t('header.about')">
         <carbon-dicom-overlay />
       </router-link>
     </div>
