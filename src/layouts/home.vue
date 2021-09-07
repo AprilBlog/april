@@ -1,5 +1,5 @@
 <template>
-  <main class="px-16 text-gray-700 dark:text-gray-200">
+  <main class="lg:px-16 px-4 text-gray-700">
     <Header />
     <router-view />
   </main>

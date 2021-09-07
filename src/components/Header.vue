@@ -9,7 +9,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <header class="flex justify-between py-6 px-10">
+  <header class="flex justify-between py-6">
     <router-link class="text-4xl" to="/" :title="t('header.title')">
       {{ t("header.title") }}
     </router-link>
