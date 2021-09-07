@@ -3,7 +3,10 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div>{{ t("pong") }}</div>
+  <!-- TODO: editor-->
+  <div class="text-center my-auto">
+    {{ t("pong") }}
+  </div>
 </template>
 
 <route lang="yaml">
