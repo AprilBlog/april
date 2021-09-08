@@ -4,8 +4,11 @@ const { t } = useI18n()
 
 <template>
   <!-- TODO: editor-->
-  <div class="text-center my-auto">
+  <div class="pb-6">
     {{ t("pong") }}
+  </div>
+  <div class="flex justify-center">
+    <Login />
   </div>
 </template>
 
