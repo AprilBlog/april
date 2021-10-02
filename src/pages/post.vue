@@ -4,10 +4,23 @@ import Vditor from 'vditor'
 
 const initVditor = () => {
   const vditor = new Vditor('vditor', {
-    height: 360,
-    width: '60%',
+    mode: 'wysiwyg',
+    icon: 'material',
+    height: 480,
+    width: '80%',
+    counter: {
+      enable: true,
+    },
+    toolbar: ['headings', 'bold', 'italic', 'strike', 'link', '|',
+      'list', 'ordered-list', 'check', '|',
+      'quote', 'line', 'code', 'inline-code', '|',
+      'upload', 'record', 'table',
+    ],
     toolbarConfig: {
       pin: true,
+    },
+    preview: {
+      actions: [],
     },
     cache: {
       enable: false,
@@ -31,6 +44,13 @@ onMounted(() => {
 
 <style>
 @import url(vditor/dist/index.css);
+
+.vditor {
+  border: unset!important;
+}
+.vditor-toolbar {
+  border-bottom: unset!important;
+}
 </style>
 
 <route lang="yaml">
