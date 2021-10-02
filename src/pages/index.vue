@@ -3,8 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <!-- TODO: editor-->
-  <div class="pb-6">
+  <div class="pb-6 text-center">
     {{ t("pong") }}
   </div>
   <div class="flex justify-center">
