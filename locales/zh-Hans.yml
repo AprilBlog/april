@@ -1,0 +1,11 @@
+back: 返回
+header:
+  about: 关于
+  avatar: 头像
+  post: 发布
+  title: april
+  toggle_langs: 更改语言
+login:
+  title: 登录
+not-found: 未能找到
+pong: 一切正常！
