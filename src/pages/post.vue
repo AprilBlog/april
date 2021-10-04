@@ -1,6 +1,9 @@
+/* eslint-disable vue/no-parsing-error */
+/* eslint-disable vue/no-parsing-error */
 <script lang="ts" setup>
 import { onMounted } from 'vue'
 import Vditor from 'vditor'
+const { t } = useI18n()
 
 const initVditor = () => {
   const vditor = new Vditor('vditor', {
@@ -23,7 +26,7 @@ const initVditor = () => {
       actions: [],
     },
     cache: {
-      enable: false,
+      enable: true,
     },
     after: () => {
     },
@@ -33,11 +36,22 @@ const initVditor = () => {
 onMounted(() => {
   initVditor()
 })
+
 </script>
 
 <template>
   <!-- TODO: make editor better -->
-  <div class="flex justify-center">
+
+  <div class="flex flex-col items-center">
+    <!-- FIXME: How to use vue-i18n in html attribute? -->
+    <input
+      id="title"
+      type="text"
+      autofocus="true"
+      placeholder="Title"
+      class="bg-transparent text-4xl mb-5 text-gray-500"
+      style="width:80%;"
+    >
     <div id="vditor"></div>
   </div>
 </template>
@@ -45,6 +59,9 @@ onMounted(() => {
 <style>
 @import url(vditor/dist/index.css);
 
+#title:focus{
+  outline: none;
+}
 .vditor {
   border: unset!important;
 }

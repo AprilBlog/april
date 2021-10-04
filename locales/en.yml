@@ -1,4 +1,6 @@
 back: Back
+editor:
+  title: Title
 header:
   about: About
   avatar: Avatar
