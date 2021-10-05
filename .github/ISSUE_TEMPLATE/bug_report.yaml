@@ -1,6 +1,6 @@
 name: "\U0001F41E Bug report"
 description: Report an issue
-labels: ['Status: Review Needed']
+labels: ["Status: Review Needed"]
 body:
   - type: markdown
     attributes:
@@ -47,7 +47,8 @@ body:
     id: browser-info
     attributes:
       label: Browser Info
-      description: 
+      description: |
+        Please provide information about the browser you are using.
       render: shell
       placeholder: Browsers
   - type: textarea
@@ -70,7 +71,7 @@ body:
       options:
         - label: Read the [README](../README.md)
           required: true
-        - label: [Check that there isn't already](https://github.com/AprilBlog/april/issues) an issue that reports the same bug to avoid creating a duplicate.c
+        - label: Check that there [isn't already an issue that reports the same bug](https://github.com/AprilBlog/april/issues) to avoid creating a duplicate.
           required: true
         - label: Check that this is a concrete bug. For Q&A open a [GitHub Discussion](https://github.com/AprilBlog/april/discussions).
           required: true
