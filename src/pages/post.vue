@@ -15,6 +15,7 @@ const { t } = useI18n()
       class="bg-transparent text-4xl mb-5 text-gray-500"
       style="width:80%;"
     >
+    <Vditor />
   </div>
 </template>
 
