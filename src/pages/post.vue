@@ -1,42 +1,5 @@
-/* eslint-disable vue/no-parsing-error */
-/* eslint-disable vue/no-parsing-error */
 <script lang="ts" setup>
-import { onMounted } from 'vue'
-import Vditor from 'vditor'
 const { t } = useI18n()
-
-const initVditor = () => {
-  const vditor = new Vditor('vditor', {
-    mode: 'wysiwyg',
-    icon: 'material',
-    height: 480,
-    width: '80%',
-    counter: {
-      enable: true,
-    },
-    toolbar: ['headings', 'bold', 'italic', 'strike', 'link', '|',
-      'list', 'ordered-list', 'check', '|',
-      'quote', 'line', 'code', 'inline-code', '|',
-      'upload', 'record', 'table',
-    ],
-    toolbarConfig: {
-      pin: true,
-    },
-    preview: {
-      actions: [],
-    },
-    cache: {
-      enable: true,
-    },
-    after: () => {
-    },
-  })
-}
-
-onMounted(() => {
-  initVditor()
-})
-
 </script>
 
 <template>
@@ -52,7 +15,6 @@ onMounted(() => {
       class="bg-transparent text-4xl mb-5 text-gray-500"
       style="width:80%;"
     >
-    <div id="vditor"></div>
   </div>
 </template>
 
@@ -61,12 +23,6 @@ onMounted(() => {
 
 #title:focus{
   outline: none;
-}
-.vditor {
-  border: unset!important;
-}
-.vditor-toolbar {
-  border-bottom: unset!important;
 }
 </style>
 
